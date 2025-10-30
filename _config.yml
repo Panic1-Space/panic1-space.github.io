@@ -1,0 +1,8 @@
+title: Panic1-Space
+description: "Home lab projects, small tools, experiments, and package demos."
+url: "https://panic1.space"
+baseurl: ""
+owner: "panic1"
+github_org: "panic1-space"
+markdown: kramdown
+# No theme — using custom layout
