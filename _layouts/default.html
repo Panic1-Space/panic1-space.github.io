@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <link rel="stylesheet" href="/assets/style.css">
+  <meta name="theme-color" content="#07101a" />
+</head>
+<body>
+  <main class="wrap" role="main">
+    <header class="header">
+      <div class="mark" aria-hidden>P1</div>
+      <div class="heading">
+        <h1>{{ page.title | default: site.title }}</h1>
+        <p class="lead">{{ page.description | default: site.description }}</p>
+        <div class="meta">
+          <span class="pill">Owner: <a href="https://github.com/{{ site.owner }}">{{ site.owner }}</a></span>
+          <span class="pill">Org: {{ site.github_org }}</span>
+          <span class="pill">Status: Placeholder site</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="card">
+      {{ content }}
+    </section>
+
+    <footer>
+      <div class="foot-inner">
+        <div>© <strong>{{ site.title }}</strong> — <span class="muted">{{ site.url | replace: "https://", "" }}</span></div>
+        <div class="muted">Built for experiments • Replace me with your project</div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
